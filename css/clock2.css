@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.clock {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 35vh;
+  width: 60%;
+  margin-left: 20vw;
+}
+
+.clock div {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(145, 145, 145, 1);
+  -moz-box-shadow: 0px 0px 8px 6px rgba(145, 145, 145, 1);
+  box-shadow: 0px 0px 8px 6px rgba(145, 145, 145, 1);
+}
+
+.clock .hours,
+.clock .minutes,
+.clock .seconds {
+  background-color: rgb(192, 172, 172);
+  position: relative;
+  font-size: 10em;
+}
+
+.hours span,
+.minutes span,
+.seconds span {
+  background: -webkit-linear-gradient(rgb(55, 224, 182), rgb(8, 75, 92));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ampm {
+  font-size: 8em;
+}
+
+.clock span {
+  margin-left: 1vw;
+}
