@@ -3,9 +3,14 @@ setInterval(() => {
   var hours = a.getHours();
   var minutes = a.getMinutes();
   var seconds = a.getSeconds();
+  var ampm = "PM";
 
   if (seconds < 10) {
     seconds = "0" + seconds;
+  }
+
+  if (hours < 12) {
+    ampm = "AM";
   }
 
   if (hours > 12) {
@@ -23,4 +28,5 @@ setInterval(() => {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("ampm").innerText = ampm;
 }, 1000);
